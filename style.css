@@ -4,7 +4,24 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: #2A554F;
+}
 
+.container{
+    width: 1024px;
+    margin: auto;
+    
+	
+}
+
+.ContentBox{
+
+    width: 1024px;
+    margin: auto;
+    
+    border-bottom-style: solid ;
+}
 
 header{
     
@@ -17,12 +34,7 @@ header{
     
     
 }
-.container{
-    width: 1024px;
-    margin: auto;
-    
-	
-}
+
 
 #Logo {
 
@@ -69,4 +81,30 @@ header{
     background-color: purple;
     color: greenyellow;
 
+}
+
+#req{
+
+    padding: ;
+}
+
+#req-min{
+
+    float: left;
+}
+
+#req-rec{
+
+    float: right;
+}
+
+
+footer{
+
+    text-align: center;
+    width: 100%;
+
+    padding: 40px 0px 40px 0px;
+    background-color: green;
+    clear: both;
 }

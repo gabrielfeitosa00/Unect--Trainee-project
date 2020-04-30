@@ -1,11 +1,12 @@
 * {
     margin: 0;
-    padding 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-color: #2A554F;
+    background-color: rgb(2, 15, 22);
+    
 }
 
 .container{
@@ -14,13 +15,31 @@ body{
     
 	
 }
-
+#site-content{
+    margin: auto;
+    width: 1024px;
+    background-color: rgba(3, 27, 41, 0.658);
+}
 .ContentBox{
 
     width: 1024px;
     margin: auto;
+     color: rgb(151, 146, 146);  /*   tratar as cores das caixas de texto localmente 
+                                        usar containers para dimencionamento apenas */
+     /* margin-bottom: 20px;  */
     
-    border-bottom-style: solid ;
+}
+/*  lembrete usar subustituitos para 
+    a bottom border  para separar as seções */
+.textbox{
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: justify;
+    max-width: 75%;
+    height: 250px;
+    border-radius: 2px;
+    background-color: rgba(36, 38, 39, 0.315);
 }
 
 header{
@@ -28,7 +47,7 @@ header{
     background-image: linear-gradient(#000000,#111111);
     height: 110px;
     padding: 10px;
-    margin-bottom: 20px; 
+    /* margin-bottom: 2px;  */
 
 
     
@@ -83,28 +102,48 @@ header{
 
 }
 
-#req{
 
-    padding: ;
+#aboutGame{
+    clear: both;
+    color: white;
+    text-align: center;
+    text-shadow:  2px 1px #111111;
+    background-image: url("imagens/dojo1.jpeg");
+    background-size: 100%;
+    
+    min-height: 400px
+}
+
+#contact{
+    
+    min-height: 150px;
+}
+
+#req{
+    text-align: center;
+    min-height: 170px;
+    /* margin-bottom: 25px; */
 }
 
 #req-min{
-
+    text-align: justify;
     float: left;
+    width: 48%;
 }
 
 #req-rec{
-
+    text-align: justify;
     float: right;
+    width: 48%;
 }
 
 
 footer{
-
+    font-size: 13px;
     text-align: center;
     width: 100%;
-
-    padding: 40px 0px 40px 0px;
-    background-color: green;
+    height: 10px;
+    padding: 20px 0px 20px 0px;
+    background-color: rgb(84, 84, 87);
     clear: both;
 }

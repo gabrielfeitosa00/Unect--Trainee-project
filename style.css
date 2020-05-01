@@ -9,6 +9,15 @@ body{
     
 }
 
+h1{
+
+    padding: 15px;
+}
+
+h2{
+
+    padding: 10px;
+}
 .container{
     width: 1024px;
     margin: auto;
@@ -19,18 +28,22 @@ body{
     margin: auto;
     width: 1024px;
     background-color: rgba(3, 27, 41, 0.658);
+    border-radius: 8px;
 }
 .ContentBox{
 
     width: 1024px;
     margin: auto;
-     color: rgb(151, 146, 146);  /*   tratar as cores das caixas de texto localmente 
+    color: whitesmoke;
+    /* padding: 15px 15px 15px 15px; */
+    
+     
+     /*   tratar as cores das caixas de texto localmente 
                                         usar containers para dimencionamento apenas */
      /* margin-bottom: 20px;  */
     
 }
-/*  lembrete usar subustituitos para 
-    a bottom border  para separar as seções */
+
 .textbox{
     margin: auto;
     margin-top: 30px;
@@ -102,37 +115,54 @@ header{
 
 }
 
+hr{
+    background-color: orangered;
+    border-color: orangered;
+    height: 1px;
+    margin-top: 4px;
+    margin-bottom:6px ;
+}
 
 #aboutGame{
     clear: both;
     color: white;
     text-align: center;
-    text-shadow:  2px 1px #111111;
+    text-shadow: 3px 3px 1px #111111;
     background-image: url("imagens/dojo1.jpeg");
     background-size: 100%;
     
     min-height: 400px
 }
+#team{
+    text-align: center;
+    text-shadow: 3px 3px 1px #111111;
+    min-height: 500px;
+}
+
 
 #contact{
-    
+    text-align: center;
+    text-shadow: 3px 3px 1px #111111;
     min-height: 150px;
 }
 
 #req{
     text-align: center;
-    min-height: 170px;
-    /* margin-bottom: 25px; */
+    text-shadow: 3px 3px 1px #111111;
+    min-height: 200px;
+    
 }
 
 #req-min{
     text-align: justify;
+    text-shadow: 3px 3px 1px #111111;
     float: left;
     width: 48%;
 }
 
 #req-rec{
     text-align: justify;
+    text-shadow: 3px 3px 1px #111111;
     float: right;
     width: 48%;
 }
@@ -141,6 +171,7 @@ header{
 footer{
     font-size: 13px;
     text-align: center;
+    text-shadow: 1px 1px 1px #111111;
     width: 100%;
     height: 10px;
     padding: 20px 0px 20px 0px;

@@ -62,10 +62,6 @@ header{
     padding: 10px;
     position: sticky;
     top: 0;
-    /* margin-bottom: 2px;  */
-
-
-    
     
 }
 
@@ -111,7 +107,7 @@ header{
 
 }
 
-#menu a:hover{
+#menu li  a:hover,#menu  li a.active{
 
     background-color: purple;
     color: greenyellow;
@@ -146,13 +142,13 @@ hr{
 #contact{
     text-align: center;
     text-shadow: 3px 3px 1px #111111;
-    min-height: 150px;
+    min-height: 500px;
 }
 
 #req{
     text-align: center;
     text-shadow: 3px 3px 1px #111111;
-    min-height: 200px;
+    min-height: 500px;
     
 }
 

@@ -12,6 +12,7 @@ body{
 h1{
 
     padding: 15px;
+    text-transform: uppercase;
 }
 
 h2{
@@ -28,7 +29,6 @@ h2{
     margin: auto;
     width: 1024px;
     background-color: rgba(3, 27, 41, 0.658);
-    border-radius: 8px;
 }
 .ContentBox{
 
@@ -77,16 +77,13 @@ h2{
 
 }
 
-.showMore {
 
-    background-color: blue;
-}
 
 header{
     
     background-image: linear-gradient(#000000,#111111);
-    height: 110px;
-    padding: 10px;
+    height: 80px;
+    padding: 8px;
     position: sticky;
     top: 0;
     
@@ -97,23 +94,21 @@ header{
 
     float: left;
     
+}
 
-    
+#Logo img {
+
+    height: 80%;
+    width: 80%;
 }
 
 #menu{
-
     
     float: right;
-    
-
-    
-    
 }
 
 #menu ul {
 
-    
     list-style: none;
 }
 
@@ -126,7 +121,7 @@ header{
 
 #menu a{
 
-    padding:52px 20px;
+    padding:33px 20px;
     display: inline-block;
     text-decoration: none;
     color:grey ;
@@ -149,6 +144,27 @@ hr{
     margin-bottom:6px ;
 }
 
+
+#home {
+
+    text-align: center;
+    text-shadow: 3px 3px 1px #111111;
+}
+
+.slide{
+
+    background-color: black;
+    position: relative;
+	overflow: hidden;
+}
+.slide img {
+
+    display: block;
+     margin: 0 auto; 
+	 max-width: 100%; 
+}
+
+
 #aboutGame{
     clear: both;
     color: white;
@@ -168,7 +184,7 @@ hr{
 
 #contact{
     text-align: center;
-    text-shadow: 3px 3px 1px #111111;
+    text-shadow: 1px 1px 1px #111111;
     min-height: 500px;
 }
 

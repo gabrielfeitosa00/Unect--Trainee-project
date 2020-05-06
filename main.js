@@ -60,5 +60,32 @@ $(document).ready(function()
     )   
 });
 
+$('.slideContainer :first-child').addClass('activeSlide');
+
+    $('.right').click(
+    
+        function(){
+            
+            
+            var imgAtual= $('.slideContainer  div.activeSlide'),
+                imgProx= imgAtual.next();
+
+            
+            if(imgProx.length==0)
+            {
+                
+                imgProx=$('.slideContainer :first-child');
+                imgProx.addClass('activeSlide');
+                
+            }
+
+            imgProx.addClass('activeSlide');
+            imgAtual.removeClass('activeSlide');
+            
+            
+
+        }
+    );
+
 
     

@@ -47,11 +47,10 @@ h2{
     margin: auto;
     margin-top: 30px;
     padding: 10px;
-    text-align: justify;
     max-width: 75%;
     height: fit-content;
     border-radius: 2px;
-    background-color: rgba(36, 38, 39, 0.315);
+    background-color: rgba(22, 25, 27, 0.322);
 }
 .mais{
 
@@ -84,7 +83,9 @@ header{
     background-image: linear-gradient(#000000,#111111);
     height: 80px;
     padding: 8px;
+    position: absolute;
     position: sticky;
+    z-index: 100;
     top: 0;
     
 }
@@ -93,6 +94,7 @@ header{
 #Logo {
 
     float: left;
+    cursor: pointer;
     
 }
 
@@ -145,40 +147,67 @@ hr{
 }
 
 
-#home {
 
-    text-align: center;
-    text-shadow: 3px 3px 1px #111111;
-}
 
-.slide{
-
-    background-color: black;
+.slideContainer{
     position: relative;
 	overflow: hidden;
 }
-.slide img {
+.slideContainer  * {
 
-    display: block;
-     margin: 0 auto; 
-	 max-width: 100%; 
+    width: 100%;
+	position: absolute;
+	opacity: 0;
+	transition: .5s;
+    
 }
 
+.slideContainer  .activeSlide{
+
+    position: relative;
+	opacity: 1;
+    
+}
+
+.left {
+
+    
+    margin-top: 300px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    margin-right: 200px;
+}
+
+.right
+
+{
+    
+    margin-top: 300px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    margin-left: 960px;
+}
 
 #aboutGame{
     clear: both;
     color: white;
     text-align: center;
-    text-shadow: 3px 3px 1px #111111;
+    text-shadow: 1px 1px 1px #111111;
     background-image: url("imagens/dojo1.jpeg");
     background-size: 100%;
     
     min-height: 500px
 }
+#sinopse{
+    text-align: justify;
+}
 #team{
     text-align: center;
     text-shadow: 3px 3px 1px #111111;
     min-height: 500px;
+    background-image: url("imagens/team.jpg");
 }
 
 

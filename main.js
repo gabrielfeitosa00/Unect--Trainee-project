@@ -55,7 +55,7 @@ $(document).ready(function()
 {
     $('.showMore').click(
         function(){
-            $('.mais').toggle();
+            $('.mais').slideToggle(250);
         }
     )   
 });

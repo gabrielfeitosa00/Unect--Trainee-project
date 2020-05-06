@@ -35,13 +35,12 @@ h2{
     width: 1024px;
     margin: auto;
     color: whitesmoke;
-    /* padding: 15px 15px 15px 15px; */
+    
     
      
      /*   tratar as cores das caixas de texto localmente 
                                         usar containers para dimencionamento apenas */
-     /* margin-bottom: 20px;  */
-    
+
 }
 
 .textbox{
@@ -50,9 +49,37 @@ h2{
     padding: 10px;
     text-align: justify;
     max-width: 75%;
-    height: 250px;
+    height: fit-content;
     border-radius: 2px;
     background-color: rgba(36, 38, 39, 0.315);
+}
+.mais{
+
+    display: none;
+}
+
+
+.showMore{
+
+    margin: auto;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    text-shadow: 2px 2px 1px #111111;
+    background-color: #C20909;
+    color: whitesmoke;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-style: none;
+    outline: none;
+    padding: 10px 20px;
+
+
+}
+
+.showMore :hover {
+
+    background-color: blue;
 }
 
 header{
@@ -130,7 +157,7 @@ hr{
     background-image: url("imagens/dojo1.jpeg");
     background-size: 100%;
     
-    min-height: 400px
+    min-height: 500px
 }
 #team{
     text-align: center;

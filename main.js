@@ -50,3 +50,15 @@ $('.ContentBox').each(function(){
 
 
 });
+
+$(document).ready(function()
+{
+    $('.showMore').click(
+        function(){
+            $('.mais').toggle();
+        }
+    )   
+});
+
+
+    

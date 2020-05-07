@@ -1,3 +1,5 @@
+// rolagem suave ao clicar no menu
+
 $('#menu a[href^="#"]').click(function (e) {
     e.preventDefault();
     var id = $(this).attr('href'),
@@ -13,6 +15,7 @@ $('#menu a[href^="#"]').click(function (e) {
 
 });
 
+// rolagem ao topo ao clicar no logo 
 
 $('#Logo').click(function (e) {
     e.preventDefault();
@@ -22,6 +25,8 @@ $('#Logo').click(function (e) {
             scrollTop: 0
         }, 500);
 });
+
+// link ativo no menu
 
 $('.ContentBox').each(function(){
     var height=$(this).height(),
@@ -34,7 +39,7 @@ $('.ContentBox').each(function(){
     $(window).scroll(function(){
         var scrollTop=$(window).scrollTop();
 
-        if(offsetTopo -menuAltura <= scrollTop && offsetTopo + height -menuAltura>= scrollTop){
+        if(offsetTopo - menuAltura < scrollTop && offsetTopo + height - menuAltura> scrollTop){
                 $itemMenu.addClass('active');
             }
 
@@ -51,6 +56,8 @@ $('.ContentBox').each(function(){
 
 });
 
+// botão de mostrar mais/mostrar menos 
+
 $(document).ready(function()
 {
     $('.showMore').click(
@@ -60,26 +67,55 @@ $(document).ready(function()
     )   
 });
 
-$('.slideContainer :first-child').addClass('activeSlide');
+// passar o slide pelo botão direito 
+
+$('.slideContainer > :first').addClass('activeSlide');
 
     $('.right').click(
     
         function(){
             
             
-            var imgAtual= $('.slideContainer  div.activeSlide'),
+            var imgAtual= $('.slideContainer > .activeSlide'),
                 imgProx= imgAtual.next();
 
             
             if(imgProx.length==0)
             {
                 
-                imgProx=$('.slideContainer :first-child');
-                imgProx.addClass('activeSlide');
+                imgProx=$('.slideContainer > :first-child');
+                
                 
             }
 
             imgProx.addClass('activeSlide');
+            imgAtual.removeClass('activeSlide');
+            
+            
+
+        }
+    );
+
+// passar o slide pelo botão esquerdo
+
+    $('.left').click(
+    
+        function(){
+            
+            
+            var imgAtual= $('.slideContainer  > .activeSlide'),
+                imgPrev= imgAtual.prev();
+
+            
+            if(imgPrev.length==0)
+            {
+                
+                imgPrev=$('.slideContainer > :last');
+                
+                
+            }
+
+            imgPrev.addClass('activeSlide');
             imgAtual.removeClass('activeSlide');
             
             

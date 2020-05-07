@@ -1,3 +1,6 @@
+
+/* Estilo da pagina inteira ou containers  */
+
 * {
     margin: 0;
     padding: 0;
@@ -35,11 +38,6 @@ h2{
     width: 1024px;
     margin: auto;
     color: whitesmoke;
-    
-    
-     
-     /*   tratar as cores das caixas de texto localmente 
-                                        usar containers para dimencionamento apenas */
 
 }
 
@@ -52,38 +50,15 @@ h2{
     border-radius: 2px;
     background-color: rgba(22, 25, 27, 0.322);
 }
-.mais{
-
-    display: none;
-}
 
 
-.showMore{
-
-    margin: auto;
-    margin-top: 15px;
-    display: block;
-    text-align: center;
-    text-shadow: 2px 2px 1px #111111;
-    background-color: #C20909;
-    color: whitesmoke;
-    font-size: 20px;
-    text-transform: capitalize;
-    border-style: none;
-    outline: none;
-    padding: 10px 20px;
-
-
-}
-
-
+/* estilo do cabeçalho e menu */
 
 header{
     
     background-image: linear-gradient(#000000,#111111);
     height: 80px;
     padding: 8px;
-    position: absolute;
     position: sticky;
     z-index: 100;
     top: 0;
@@ -138,31 +113,52 @@ header{
 
 }
 
-hr{
+ hr{
     background-color: orangered;
     border-color: orangered;
     height: 1px;
-    margin-top: 4px;
-    margin-bottom:6px ;
+    margin-top: 2px;
+    margin-bottom:4px ;
+} 
+
+/*  Estilo da seção home e dos slides */
+
+#home {
+
+    text-align: center;
+    text-shadow: 1px 1px 1px #111111;
+    min-height: 400px;
 }
-
-
-
 
 .slideContainer{
     position: relative;
 	overflow: hidden;
 }
-.slideContainer  * {
+.slideContainer h2{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+}
+.slideContainer > * {
 
     width: 100%;
 	position: absolute;
 	opacity: 0;
-	transition: .5s;
+    transition: .5s;
+    max-height: 650px;
     
 }
 
-.slideContainer  .activeSlide{
+.slideContainer > .activeSlide{
 
     position: relative;
 	opacity: 1;
@@ -176,7 +172,7 @@ hr{
     position: absolute;
     cursor: pointer;
     z-index: 10;
-    margin-right: 200px;
+    margin-left: -10px;
 }
 
 .right
@@ -187,8 +183,10 @@ hr{
     position: absolute;
     cursor: pointer;
     z-index: 10;
-    margin-left: 960px;
+    margin-left: 978px;
 }
+
+/* estilo da seção sobre o jogo */
 
 #aboutGame{
     clear: both;
@@ -200,27 +198,60 @@ hr{
     
     min-height: 500px
 }
+
 #sinopse{
     text-align: justify;
 }
+
+.mais{
+
+    display: none;
+}
+
+
+.showMore{
+
+    margin: auto;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    text-shadow: 2px 2px 1px #111111;
+    background-color: #C20909;
+    color: whitesmoke;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-style: none;
+    outline: none;
+    padding: 10px 20px;
+
+
+}
+
+/*  estilo da seção da equipe */
+
 #team{
     text-align: center;
     text-shadow: 3px 3px 1px #111111;
     min-height: 500px;
     background-image: url("imagens/team.jpg");
+    
 }
 
+
+/* estilo da seção de contato */
 
 #contact{
     text-align: center;
     text-shadow: 1px 1px 1px #111111;
-    min-height: 500px;
+    min-height: 400px;
 }
+
+/* estilo da seção de requisitos  */
 
 #req{
     text-align: center;
     text-shadow: 3px 3px 1px #111111;
-    min-height: 500px;
+    min-height: 400px;
     
 }
 
@@ -238,6 +269,7 @@ hr{
     width: 48%;
 }
 
+/* estilo do rodapé */
 
 footer{
     font-size: 13px;

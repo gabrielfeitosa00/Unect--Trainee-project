@@ -67,9 +67,47 @@ $(document).ready(function()
     )   
 });
 
-// passar o slide pelo botão direito 
+// Slide automatico 
 
 $('.slideContainer > :first').addClass('activeSlide');
+
+function slideAuto(){
+            
+            
+    var  Auto=setInterval(rodaSlide, 2000);
+
+
+    $('.slideContainer').hover(function () {
+            clearInterval(Auto);
+        }, function () {
+            Auto=setInterval(rodaSlide, 2000);
+        }
+    );
+
+    function rodaSlide(){
+    var imgAtual= $('.slideContainer > .activeSlide'),
+        imgProx= imgAtual.next();
+
+    if(imgProx.length==0)
+    {
+        
+        imgProx=$('.slideContainer > :first-child'); 
+    }
+
+    imgProx.addClass('activeSlide');
+    imgAtual.removeClass('activeSlide');
+}
+    
+
+};
+
+slideAuto();
+
+
+
+// passar o slide pelo botão direito 
+
+
 
     $('.right').click(
     

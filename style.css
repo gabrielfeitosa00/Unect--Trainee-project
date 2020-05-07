@@ -12,32 +12,41 @@ body{
     
 }
 
+#siteWrapper
+{
+    margin: auto;
+}
+
 h1{
 
     padding: 15px;
     text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h2{
 
     padding: 10px;
 }
-.container{
-    width: 1024px;
+.containerHead{
+    width: 100%;
     margin: auto;
+    position: absolute;
     
 	
 }
+
 #site-content{
     margin: auto;
-    width: 1024px;
+    width: 76%;
     background-color: rgba(3, 27, 41, 0.658);
 }
 .ContentBox{
 
-    width: 1024px;
+    width: 100%;
     margin: auto;
     color: whitesmoke;
+    position: relative;
 
 }
 
@@ -47,9 +56,18 @@ h2{
     padding: 10px;
     max-width: 75%;
     height: fit-content;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 2px;
     background-color: rgba(22, 25, 27, 0.322);
 }
+
+hr{
+    background-color: orangered;
+    border-color: orangered;
+    height: 1px;
+    margin-top: 2px;
+    margin-bottom:2px ;
+} 
 
 
 /* estilo do cabeçalho e menu */
@@ -57,8 +75,10 @@ h2{
 header{
     
     background-image: linear-gradient(#000000,#111111);
+    
     height: 80px;
     padding: 8px;
+    position: relative;
     position: sticky;
     z-index: 100;
     top: 0;
@@ -67,7 +87,7 @@ header{
 
 
 #Logo {
-
+    padding-left: 20px;
     float: left;
     cursor: pointer;
     
@@ -82,6 +102,7 @@ header{
 #menu{
     
     float: right;
+    padding-right: 40px;
 }
 
 #menu ul {
@@ -113,13 +134,7 @@ header{
 
 }
 
- hr{
-    background-color: orangered;
-    border-color: orangered;
-    height: 1px;
-    margin-top: 2px;
-    margin-bottom:4px ;
-} 
+
 
 /*  Estilo da seção home e dos slides */
 
@@ -132,7 +147,8 @@ header{
 
 .slideContainer{
     position: relative;
-	overflow: hidden;
+    overflow: hidden;
+    width: 100%;
 }
 .slideContainer h2{
     position: absolute;
@@ -145,7 +161,7 @@ header{
     padding: 5px;
     margin: 0 auto;
     font-size: 3em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: red;
 }
 .slideContainer > * {
@@ -172,7 +188,7 @@ header{
     position: absolute;
     cursor: pointer;
     z-index: 10;
-    margin-left: -10px;
+    left: 0;
 }
 
 .right
@@ -183,7 +199,7 @@ header{
     position: absolute;
     cursor: pointer;
     z-index: 10;
-    margin-left: 978px;
+    right: 0;
 }
 
 /* estilo da seção sobre o jogo */
@@ -201,6 +217,7 @@ header{
 
 #sinopse{
     text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .mais{
@@ -231,7 +248,7 @@ header{
 
 #team{
     text-align: center;
-    text-shadow: 3px 3px 1px #111111;
+    text-shadow: 1px 1px 1px #111111;
     min-height: 500px;
     background-image: url("imagens/team.jpg");
     
@@ -250,14 +267,14 @@ header{
 
 #req{
     text-align: center;
-    text-shadow: 3px 3px 1px #111111;
+    text-shadow: 1px 1px 1px #111111;
     min-height: 400px;
     
 }
 
 #req-min{
     text-align: justify;
-    text-shadow: 3px 3px 1px #111111;
+    text-shadow: 1px 1px 1px #111111;
     float: left;
     width: 48%;
 }

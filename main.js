@@ -5,7 +5,7 @@ $('#menu a[href^="#"]').click(function (e) {
     var id = $(this).attr('href'),
         alvoOffset = $(id).offset().top,
         menuAltura = $('header').innerHeight();
-    
+
     $('html, body').animate(
         {
             scrollTop: alvoOffset - menuAltura
@@ -28,25 +28,25 @@ $('#Logo').click(function (e) {
 
 // link ativo no menu
 
-$('.ContentBox').each(function(){
-    var height=$(this).height(),
-        offsetTopo= $(this).offset().top,
+$('.ContentBox').each(function () {
+    var height = $(this).height(),
+        offsetTopo = $(this).offset().top,
         menuAltura = $('header').innerHeight(),
-        id= $(this).attr('id'),
-        $itemMenu=$('a[href="#'+ id +'"]');
+        id = $(this).attr('id'),
+        $itemMenu = $('a[href="#' + id + '"]');
 
 
-    $(window).scroll(function(){
-        var scrollTop=$(window).scrollTop();
+    $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop();
 
-        if(offsetTopo - menuAltura < scrollTop && offsetTopo + height - menuAltura> scrollTop){
-                $itemMenu.addClass('active');
-            }
+        if (offsetTopo - menuAltura < scrollTop && offsetTopo + height - menuAltura > scrollTop) {
+            $itemMenu.addClass('active');
+        }
 
-            
-        else{
-                $itemMenu.removeClass('active');
-            }
+
+        else {
+            $itemMenu.removeClass('active');
+        }
 
 
 
@@ -58,46 +58,44 @@ $('.ContentBox').each(function(){
 
 // botão de mostrar mais/mostrar menos 
 
-$(document).ready(function()
-{
+$(document).ready(function () {
     $('.showMore').click(
-        function(){
+        function () {
             $('.mais').slideToggle(250);
         }
-    )   
+    )
 });
 
 // Slide automatico 
 
 $('.slideContainer > :first').addClass('activeSlide');
 
-function slideAuto(){
-            
-            
-    var  Auto=setInterval(rodaSlide, 2000);
+function slideAuto() {
+
+
+    var Auto = setInterval(rodaSlide, 2000);
 
 
     $('.slideContainer').hover(function () {
-            clearInterval(Auto);
-        }, function () {
-            Auto=setInterval(rodaSlide, 2000);
-        }
+        clearInterval(Auto);
+    }, function () {
+        Auto = setInterval(rodaSlide, 2000);
+    }
     );
 
-    function rodaSlide(){
-    var imgAtual= $('.slideContainer > .activeSlide'),
-        imgProx= imgAtual.next();
+    function rodaSlide() {
+        var imgAtual = $('.slideContainer > .activeSlide'),
+            imgProx = imgAtual.next();
 
-    if(imgProx.length==0)
-    {
-        
-        imgProx=$('.slideContainer > :first-child'); 
+        if (imgProx.length == 0) {
+
+            imgProx = $('.slideContainer > :first-child');
+        }
+
+        imgProx.addClass('activeSlide');
+        imgAtual.removeClass('activeSlide');
     }
 
-    imgProx.addClass('activeSlide');
-    imgAtual.removeClass('activeSlide');
-}
-    
 
 };
 
@@ -109,57 +107,54 @@ slideAuto();
 
 
 
-    $('.right').click(
-    
-        function(){
-            
-            
-            var imgAtual= $('.slideContainer > .activeSlide'),
-                imgProx= imgAtual.next();
+$('.right').click(
 
-            
-            if(imgProx.length==0)
-            {
-                
-                imgProx=$('.slideContainer > :first-child');
-                
-                
-            }
+    function () {
 
-            imgProx.addClass('activeSlide');
-            imgAtual.removeClass('activeSlide');
-            
-            
+
+        var imgAtual = $('.slideContainer > .activeSlide'),
+            imgProx = imgAtual.next();
+
+
+        if (imgProx.length == 0) {
+
+            imgProx = $('.slideContainer > :first-child');
+
 
         }
-    );
+
+        imgProx.addClass('activeSlide');
+        imgAtual.removeClass('activeSlide');
+
+
+
+    }
+);
 
 // passar o slide pelo botão esquerdo
 
-    $('.left').click(
-    
-        function(){
-            
-            
-            var imgAtual= $('.slideContainer  > .activeSlide'),
-                imgPrev= imgAtual.prev();
+$('.left').click(
 
-            
-            if(imgPrev.length==0)
-            {
-                
-                imgPrev=$('.slideContainer > :last');
-                
-                
-            }
+    function () {
 
-            imgPrev.addClass('activeSlide');
-            imgAtual.removeClass('activeSlide');
-            
-            
+
+        var imgAtual = $('.slideContainer  > .activeSlide'),
+            imgPrev = imgAtual.prev();
+
+
+        if (imgPrev.length == 0) {
+
+            imgPrev = $('.slideContainer > :last');
+
 
         }
-    );
+
+        imgPrev.addClass('activeSlide');
+        imgAtual.removeClass('activeSlide');
 
 
-    
+
+    }
+);
+
+

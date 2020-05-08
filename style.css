@@ -69,6 +69,7 @@ hr{
     margin-bottom:2px ;
 } 
 
+ 
 
 /* estilo do cabeçalho e menu */
 
@@ -102,24 +103,17 @@ header{
 #menu{
     
     float: right;
-    padding-right: 40px;
-}
-
-#menu ul {
-
-    list-style: none;
-}
-
-#menu ul li{
-
-    display: inline;
-
+    padding-right: 40px; 
+    overflow: hidden;
     
 }
 
-#menu a{
+
+
+#menu  a{
 
     padding:33px 20px;
+    text-align: center;
     display: inline-block;
     text-decoration: none;
     color:grey ;
@@ -127,9 +121,9 @@ header{
 
 }
 
-#menu li  a:hover,#menu  li a.active{
+#menu  a:hover,#menu a.active{
 
-    background-color: purple;
+    
     color: greenyellow;
 
 }
@@ -259,10 +253,15 @@ header{
 
 #contact{
     text-align: center;
+    
+    background-image: url('imagens/email.jpg');
     text-shadow: 1px 1px 1px #111111;
     min-height: 400px;
 }
-
+#contact p{
+    font-size: 2em;
+    
+}
 /* estilo da seção de requisitos  */
 
 #req{
@@ -270,20 +269,37 @@ header{
     text-shadow: 1px 1px 1px #111111;
     min-height: 400px;
     
+    background-image: url('imagens/gamer2.jpg');
+    
 }
+#req-container {
 
+    
+    margin-top: 30px;
+    overflow: hidden;
+    height: fit-content;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+    background-color: rgba(22, 25, 27, 0.479);
+    
+}
 #req-min{
     text-align: justify;
     text-shadow: 1px 1px 1px #111111;
     float: left;
     width: 48%;
+    font-size: 1.25em;
+    
 }
 
 #req-rec{
     text-align: justify;
-    text-shadow: 3px 3px 1px #111111;
+    text-shadow: 1px 1px 1px #111111;
     float: right;
     width: 48%;
+    font-size: 1.25em;
+    
 }
 
 /* estilo do rodapé */
